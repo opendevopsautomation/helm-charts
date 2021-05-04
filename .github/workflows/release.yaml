@@ -1,23 +1,61 @@
 name: Release Charts
-
-on:
+on: 
   push:
     branches:
       - master
     paths:
       - 'stable/**'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'stable/**'
+  release:
+    types: [published, created]
 
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Configure Git
         run: |
-          git config --global user.name "anup.dubey"
-          git config  user.email "anup.hnu@outlook.com"
-      - name: Run chart-releaser
-        uses: helm/chart-releaser-action@main
-        env:
-          CR_TOKEN: '${{ secrets.CR_TOKEN }}'
+          git config --global user.name "opendevopsautomation"
+          git config  user.email "opendevopsautomation@gmail.com"
+      - name: Publish Helm charts
+        uses: stefanprodan/helm-gh-pages@v1.4.1
+        with:
+          token: ${{ secrets.CR_TOKEN }}
+          charts_dir: stable
+
+
+
+
+
+
+
+
+
+
+#on:
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - 'stable/**'
+#
+#jobs:
+#  release:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v1
+#      - name: Configure Git
+#        run: |
+#          git config --global user.name "anup.dubey"
+#          git config  user.email "anup.hnu@outlook.com"
+#      - name: Run chart-releaser
+#        uses: helm/chart-releaser-action@main
+#        env:
+#          CR_TOKEN: '${{ secrets.CR_TOKEN }}'
