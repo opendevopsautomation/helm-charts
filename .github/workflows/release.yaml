@@ -17,7 +17,12 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Configure Git
+        run: |
+          git config --global user.name "opendevopsautomation"
+          git config  user.email "opendevopsautomation@gmail.com"
       - name: Publish Helm charts
         uses: stefanprodan/helm-gh-pages@v1.4.1
         with:
