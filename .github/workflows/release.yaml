@@ -19,7 +19,8 @@ jobs:
           git config --global user.name "opendevopsautomation"
           git config  user.email "opendevopsautomation@gmail.com"
       - name: Publish Helm charts
-        uses: stefanprodan/helm-gh-pages@v1.4.1
+       # uses: stefanprodan/helm-gh-pages@v1.4.1
+        uses: peaceiris/actions-gh-pages@v3
         env:
           CR_TOKEN: '${{ secrets.CR_TOKEN }}'
         with:
