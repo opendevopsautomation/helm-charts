@@ -24,6 +24,7 @@ jobs:
         env:
           CR_TOKEN: '${{ secrets.CR_TOKEN }}'
         with:
-          token: ${{ secrets.CR_TOKEN }}
+          github_token: ${{ secrets.CR_TOKEN }}
+          #token: ${{ secrets.CR_TOKEN }}
           charts_dir: stable
 
