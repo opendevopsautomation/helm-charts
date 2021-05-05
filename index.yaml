@@ -3,9 +3,9 @@ entries:
   application:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-05-05T05:11:19.107240656Z"
+    created: "2021-05-05T05:13:03.186740962Z"
     description: A Helm chart for Kubernetes application deployments
-    digest: 9a635a2dc40e1ce70a3e33b92a86f7dec2676b6de3ef2beffbfb238176c0e9e3
+    digest: e2dd333480157751b01e5682a8ed178e2155a9e2613a3afa7c1e2591559d1559
     name: application
     urls:
     - https://opendevopsautomation.github.io/helm-charts/application-0.1.0.tgz
@@ -13,9 +13,9 @@ entries:
   cluster-autoscaler:
   - apiVersion: v1
     appVersion: 1.17.1
-    created: "2021-05-05T05:11:19.109251782Z"
+    created: "2021-05-05T05:13:03.187979267Z"
     description: Scales worker nodes within autoscaling groups.
-    digest: cbbcfc9363c70ea3367ec41f2a19a70f7976b6f4d6d7a3cf433207f3b9d1421b
+    digest: 91f2f59a6b2c518ac18c068f13d0e5e2a7098070a9ecfee422fc0879f45f826c
     home: https://github.com/kubernetes/autoscaler
     icon: https://github.com/kubernetes/kubernetes/blob/master/logo/logo.png
     maintainers:
@@ -33,9 +33,9 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 7.0.1
-    created: "2021-05-05T05:11:19.110108994Z"
+    created: "2021-05-05T05:13:03.188346898Z"
     description: Helm chart for the Elasticsearch
-    digest: 43cdf7acd385b472b97fb2dd085b9ece72dc331c91cb47e14f0a8325a3732aae
+    digest: bcd0dce1475e3499d910a9699bc649984dacae818ffe0dd2137d0b869c9e90d8
     name: elasticsearch
     urls:
     - https://opendevopsautomation.github.io/helm-charts/elasticsearch-7.0.1.tgz
@@ -43,9 +43,9 @@ entries:
   fluentd:
   - apiVersion: v1
     appVersion: v1.3-debian-elasticsearch-1
-    created: "2021-05-05T05:11:19.110421098Z"
+    created: "2021-05-05T05:13:03.188747332Z"
     description: Helm chart for the Fluentd
-    digest: c5512f96e993e07fc64212b76985bf624f74adb44dc4d41dd8f212238eadc861
+    digest: 2eef32f6719661481432796bf99ba36e27dd6f60b14998864c8c991a5cfd1b27
     name: fluentd
     urls:
     - https://opendevopsautomation.github.io/helm-charts/fluentd-v1.3-debian-elasticsearch-1.tgz
@@ -53,9 +53,9 @@ entries:
   redis-ha:
   - apiVersion: v1
     appVersion: 5.0.6
-    created: "2021-05-05T05:11:19.112066619Z"
+    created: "2021-05-05T05:13:03.190335866Z"
     description: Highly available Kubernetes implementation of Redis
-    digest: 9c7f74c553873cfdab9caeca0350e477c9f991c0ce7ae1a6f2134902c2019026
+    digest: 554f8001df61a6e24f0c7cd0d13a8a2c3997bf9f363d02f6fca565b8dd27a93c
     home: http://redis.io/
     icon: https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png
     keywords:
@@ -75,4 +75,4 @@ entries:
     urls:
     - https://opendevopsautomation.github.io/helm-charts/redis-ha-4.4.4.tgz
     version: 4.4.4
-generated: "2021-05-05T05:11:19.106227142Z"
+generated: "2021-05-05T05:13:03.185318142Z"
