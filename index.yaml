@@ -3,9 +3,10 @@ entries:
   application:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-05-05T05:13:03.186740962Z"
-    description: A Helm chart for Kubernetes application deployments
-    digest: e2dd333480157751b01e5682a8ed178e2155a9e2613a3afa7c1e2591559d1559
+    created: "2021-05-05T05:23:03.35296747Z"
+    description: A Helm chart for Kubernetes application deployments(Java, nodejs
+      and python)
+    digest: 949845c46923484a7d64c9f24922175a48f870139473bd1a6a8011c2e3c6b39d
     name: application
     urls:
     - https://opendevopsautomation.github.io/helm-charts/application-0.1.0.tgz
@@ -13,9 +14,9 @@ entries:
   cluster-autoscaler:
   - apiVersion: v1
     appVersion: 1.17.1
-    created: "2021-05-05T05:13:03.187979267Z"
+    created: "2021-05-05T05:23:03.35419583Z"
     description: Scales worker nodes within autoscaling groups.
-    digest: 91f2f59a6b2c518ac18c068f13d0e5e2a7098070a9ecfee422fc0879f45f826c
+    digest: 12ee0d7875ce5e788e4e98033198ef3b673473ee0c72ebfc7465fdae911ab3ca
     home: https://github.com/kubernetes/autoscaler
     icon: https://github.com/kubernetes/kubernetes/blob/master/logo/logo.png
     maintainers:
@@ -33,9 +34,9 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 7.0.1
-    created: "2021-05-05T05:13:03.188346898Z"
+    created: "2021-05-05T05:23:03.354644151Z"
     description: Helm chart for the Elasticsearch
-    digest: bcd0dce1475e3499d910a9699bc649984dacae818ffe0dd2137d0b869c9e90d8
+    digest: 716f4543f9aed331d6eba24fc5fbf4aa58162ef136b57814b27e871919550996
     name: elasticsearch
     urls:
     - https://opendevopsautomation.github.io/helm-charts/elasticsearch-7.0.1.tgz
@@ -43,19 +44,45 @@ entries:
   fluentd:
   - apiVersion: v1
     appVersion: v1.3-debian-elasticsearch-1
-    created: "2021-05-05T05:13:03.188747332Z"
+    created: "2021-05-05T05:23:03.354942566Z"
     description: Helm chart for the Fluentd
-    digest: 2eef32f6719661481432796bf99ba36e27dd6f60b14998864c8c991a5cfd1b27
+    digest: eb72f0ebd17dcb58dbe16c0378057d6d12ce0410dc21804df93ae4cb61f41864
     name: fluentd
     urls:
     - https://opendevopsautomation.github.io/helm-charts/fluentd-v1.3-debian-elasticsearch-1.tgz
     version: v1.3-debian-elasticsearch-1
+  kafka:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 2.6.0
+    created: "2021-05-05T05:23:03.360387529Z"
+    description: Apache Kafka is a distributed streaming platform.
+    digest: cb9ec6283ba826459446f039b628f2e59ba7f73931ff563b3df3ffc4c72d2d3a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/kafka
+    icon: https://bitnami.com/assets/stacks/kafka/img/kafka-stack-110x117.png
+    keywords:
+    - kafka
+    - streaming
+    - zookeeper
+    - producer
+    - consumer
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: kafka
+    sources:
+    - https://github.com/bitnami/bitnami-docker-kafka
+    - https://kafka.apache.org/
+    urls:
+    - https://opendevopsautomation.github.io/helm-charts/kafka-11.8.8.tgz
+    version: 11.8.8
   redis-ha:
   - apiVersion: v1
     appVersion: 5.0.6
-    created: "2021-05-05T05:13:03.190335866Z"
+    created: "2021-05-05T05:23:03.362227318Z"
     description: Highly available Kubernetes implementation of Redis
-    digest: 554f8001df61a6e24f0c7cd0d13a8a2c3997bf9f363d02f6fca565b8dd27a93c
+    digest: 1c3f38762e80bc7c147b10bdf4e93deb9c71fd828c761bfce5b60e242b954626
     home: http://redis.io/
     icon: https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png
     keywords:
@@ -75,4 +102,4 @@ entries:
     urls:
     - https://opendevopsautomation.github.io/helm-charts/redis-ha-4.4.4.tgz
     version: 4.4.4
-generated: "2021-05-05T05:13:03.185318142Z"
+generated: "2021-05-05T05:23:03.351939721Z"
