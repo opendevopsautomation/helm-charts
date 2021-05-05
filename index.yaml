@@ -1,0 +1,78 @@
+apiVersion: v1
+entries:
+  application:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-05-05T05:11:19.107240656Z"
+    description: A Helm chart for Kubernetes application deployments
+    digest: 9a635a2dc40e1ce70a3e33b92a86f7dec2676b6de3ef2beffbfb238176c0e9e3
+    name: application
+    urls:
+    - https://opendevopsautomation.github.io/helm-charts/application-0.1.0.tgz
+    version: 0.1.0
+  cluster-autoscaler:
+  - apiVersion: v1
+    appVersion: 1.17.1
+    created: "2021-05-05T05:11:19.109251782Z"
+    description: Scales worker nodes within autoscaling groups.
+    digest: cbbcfc9363c70ea3367ec41f2a19a70f7976b6f4d6d7a3cf433207f3b9d1421b
+    home: https://github.com/kubernetes/autoscaler
+    icon: https://github.com/kubernetes/kubernetes/blob/master/logo/logo.png
+    maintainers:
+    - email: mgoodness@gmail.com
+      name: mgoodness
+    - email: e.bailey@sportradar.com
+      name: yurrriq
+    name: cluster-autoscaler
+    sources:
+    - https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler
+    - https://github.com/spotinst/kubernetes-autoscaler/tree/master/cluster-autoscaler
+    urls:
+    - https://opendevopsautomation.github.io/helm-charts/cluster-autoscaler-7.3.2.tgz
+    version: 7.3.2
+  elasticsearch:
+  - apiVersion: v1
+    appVersion: 7.0.1
+    created: "2021-05-05T05:11:19.110108994Z"
+    description: Helm chart for the Elasticsearch
+    digest: 43cdf7acd385b472b97fb2dd085b9ece72dc331c91cb47e14f0a8325a3732aae
+    name: elasticsearch
+    urls:
+    - https://opendevopsautomation.github.io/helm-charts/elasticsearch-7.0.1.tgz
+    version: 7.0.1
+  fluentd:
+  - apiVersion: v1
+    appVersion: v1.3-debian-elasticsearch-1
+    created: "2021-05-05T05:11:19.110421098Z"
+    description: Helm chart for the Fluentd
+    digest: c5512f96e993e07fc64212b76985bf624f74adb44dc4d41dd8f212238eadc861
+    name: fluentd
+    urls:
+    - https://opendevopsautomation.github.io/helm-charts/fluentd-v1.3-debian-elasticsearch-1.tgz
+    version: v1.3-debian-elasticsearch-1
+  redis-ha:
+  - apiVersion: v1
+    appVersion: 5.0.6
+    created: "2021-05-05T05:11:19.112066619Z"
+    description: Highly available Kubernetes implementation of Redis
+    digest: 9c7f74c553873cfdab9caeca0350e477c9f991c0ce7ae1a6f2134902c2019026
+    home: http://redis.io/
+    icon: https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: salimsalaues@gmail.com
+      name: ssalaues
+    - email: aaron.layfield@gmail.com
+      name: dandydeveloper
+    name: redis-ha
+    sources:
+    - https://redis.io/download
+    - https://github.com/scality/Zenko/tree/development/1.0/kubernetes/zenko/charts/redis-ha
+    - https://github.com/oliver006/redis_exporter
+    urls:
+    - https://opendevopsautomation.github.io/helm-charts/redis-ha-4.4.4.tgz
+    version: 4.4.4
+generated: "2021-05-05T05:11:19.106227142Z"
